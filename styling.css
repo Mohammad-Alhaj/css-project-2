@@ -1,0 +1,377 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Abel',sans-serif;
+    scroll-behavior: smooth;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Abel',sans-serif;
+}
+
+/* GENERAL STYLING */
+.container {
+max-width: 120rem;
+margin:  auto;
+padding: 3rem 2rem;
+}
+
+.grid--col-3 {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 1.5rem;
+}
+.grid--col-4 {
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+/* GENERAL STYLING */
+
+/*Start hero section */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #17191e;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    font-size: 2rem;
+    color:#f7d501;
+}
+header .image img {
+    width: 15rem;
+  
+}
+
+.hero {
+    background-color: #17191e;
+    height:100vh ;
+    height: calc(100vh - 117px);
+}
+.hero h1 {
+    font-size: 10rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    color:#f7d501;
+    max-width: 70rem;
+}
+
+.para {
+    color: #dfdfe0;
+    max-width:50rem;
+    line-height: 1.8;
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+}
+.black-section {
+    margin-bottom: 10.9rem;
+}
+.btn {
+    font-size: 1.5rem;
+    color: #dfdfe0;
+    border: 1px solid #f7d501;
+    padding: 1.5rem 2.5rem;
+    border-radius: 1.5rem;
+    transition: all 0.4s ease;
+}
+.btn:hover {
+  color: #17191e;
+  background-color: #f7d501;
+}
+.yallow-section p {
+    /* height: calc(9.24rem - 100vh); */
+    background-color: #f7d501;
+    color:#17191e;
+    margin: 0;
+    padding: 0;
+    padding: 5.5rem;
+    text-align: center;
+    letter-spacing: 1.2;
+    font-size: 1.3rem;
+}
+
+
+/*End hero section */
+/* **************************** */
+/* Start feature section */
+
+
+.boxes {
+    margin-bottom:7rem ;
+margin: 6rem 0;
+}
+
+.featrue-icon {
+    font-size: 4rem;
+    background-color: #f7d501;
+    padding: 1rem;
+    margin-bottom: 3.6rem;
+}
+
+.box-title {
+    font-size: 4rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #f7d501;
+    margin-bottom: 4rem;
+}
+.par-box {
+font-size: 1.3rem;
+letter-spacing: 1.2px;
+}
+.btn-feature-div {
+    text-align: center;
+}
+.btn-feature-div i {
+    color: #17191e;
+    font-size: 1.6rem;
+    padding: 1.9 3.5rem;
+margin-bottom: 4rem;
+}
+/* End feature section */
+/* ************************************* */
+/* Start number section */
+.our-number {
+    background-color: #17191e;
+    margin-top: 5rem;
+}
+.icon-number-sec {
+    font-size: 3rem;
+    color: #f7d501;
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+}
+
+.number-boxes {
+    text-align: center;
+}
+
+.number {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.number-boxes h4 {
+    color: #f7d501;
+    font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 1.2px;
+
+}
+
+/* end number section */
+/* ************************************* */
+/* Start works so far.....section */
+.par-works {
+    margin-bottom: 6rem;
+max-width: 70rem;
+}
+.nav-our-works {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 0 5rem;
+    padding: 0 0.5rem;
+}
+.nav-our-works li {
+    font-size: 1.5rem;
+    padding: 1rem  2.5rem;
+    border: 1.5px solid #f7d501 ;
+    transition: all 0.4s ease;
+}
+.nav-our-works li:hover{
+    background-color: #f7d501;
+}
+/* End works so far.....section */
+/* *************************************** */
+/* Start books section */
+.books-section {
+    position: relative;
+}
+.books-grid {
+    margin: 8rem 0; 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+ 
+}
+.A500 {
+    width: 100%;
+    height: 100%;
+ background-color: #f7d501;
+
+}
+.books-section::before {
+content: "";
+background-color: hsla(52, 92%, 90%, 0.221);
+position: absolute;
+width: 100%;
+height: 90%;
+top: 0;
+}
+.A1000 {
+    width: 100%;
+    height: 100%;
+}
+.tall {
+    width: 100%;
+    height: 100%;
+grid-row: 1/-1;
+} 
+
+.first {
+ grid-row:2/3 ;
+ grid-column: 4/5;
+}
+.second {
+    grid-row:2/3 ;
+ grid-column: 3/4; 
+}
+.theard {
+    grid-row:2/3 ;
+    grid-column: 2/3;
+}
+.firstA1000 {
+    grid-column: 4/5;
+}
+.secondA1000 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.btn-books {
+    text-align: center;
+    margin-bottom:8rem ;
+}
+.btn-books i {
+padding: 2rem 6rem;
+font-size: 1.2rem;
+color: #17191e;
+transition: all 0.4s ease;
+}
+.btn-books i:hover{
+    background-color: #f7d501;
+    
+}
+/* End books section */
+/* ******************************** */
+/* Start client section */
+.our-client-section {
+    background-color: #17191e;
+}
+.titel-client {
+    color: white;
+    max-width: 60rem;
+}
+.client-icon {
+    color: #f7d501;
+    font-size: 3rem;
+}
+.icons {
+    text-align: center;
+    margin: 3rem 0;
+}
+/* End client section */
+/* ******************************** */
+/* start contactUs section */
+.contact-section {
+    margin-bottom: 3rem;
+}
+form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1rem;
+    margin: 5rem;
+ 
+}
+.subject {
+grid-column: 1/-1;
+}
+.Messages {
+    grid-column: 1/-1;
+    justify-self: center;
+width: 100%;
+
+}
+
+form input {
+
+    padding: 1.2rem;
+
+}
+.btn-info {
+    text-align: center;
+ 
+}
+.btn-info input {
+    background-color: white;
+    padding: 2rem 6rem;
+    font-size: 1.2rem;
+    color: #17191e;
+    transition: all 0.4s ease;
+    }
+.btn-info input:hover{
+        background-color: #f7d501;
+        
+    }
+
+    /* Information Contact */
+    .info-contact {
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        gap: 1.5rem;
+
+    }
+    .info-contact-section {
+        background-color: #f7d501;
+        margin-top: 5rem;
+    padding: 3.5rem;
+
+    }
+    .info-contact div{
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+    
+    .info-contact p {
+        font-size: 1.5rem;
+    }
+    .info-icon {
+        font-size: 4rem;
+    }
+
+/* End contactUs section */
+/* ******************************************** */
+/* Start footer */
+footer {
+    text-align: center;
+background-color: #17191e;
+padding: 7rem 0;
+
+}
+footer p {
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+
+}
+footer div i {
+    color: white;
+    font-size: 2rem;
+margin-left: 2rem;
+}
+/* End footer */

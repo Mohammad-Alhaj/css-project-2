@@ -1,0 +1,41 @@
+
+
+
+@media(max-width:550px) {
+    html {
+        font-size: 8.8px;
+    }
+}
+@media(max-width:520px) {
+    .info-contact {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1.5rem;
+    }
+    .info-contact div {
+        background-color: #ffed79;
+        padding: 2rem;
+    }
+}
+
+
+@media(max-width:450px) {
+    nav ul {
+        display: none;
+        visibility:hidden;
+    }
+    html {
+        font-size: 8px;
+    }
+    form {
+    
+        justify-content: center;
+   
+    }
+}
+@media(max-width:355px) {
+  
+    html {
+        font-size: 7.5px;
+    }
+}
